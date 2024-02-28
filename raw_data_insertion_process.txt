@@ -1,0 +1,63 @@
+--------------------------------------------------------------------------------------------------------------------------------
+-- ON POSTGRESQL
+--------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
+-- DDL syntax: TABLE CREATION PROCESS ON POSTGRESQL
+--------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE table_m3 (
+    "ID" INTEGER PRIMARY KEY,
+    "Country of Origin" VARCHAR,
+    "Farm Name" VARCHAR,
+    "Lot Number" VARCHAR,
+    "Mill" VARCHAR,
+    "ICO Number" VARCHAR,
+    "Company" VARCHAR,
+    "Altitude" VARCHAR,
+    "Region" VARCHAR,
+    "Producer" VARCHAR,
+    "Number of Bags" INTEGER,
+    "Bag Weight" VARCHAR,
+    "In-Country Partner" VARCHAR,
+    "Harvest Year" VARCHAR,
+    "Grading Date" VARCHAR,
+    "Owner" VARCHAR,
+    "Variety" VARCHAR,
+    "Status" VARCHAR,
+    "Processing Method" VARCHAR,
+    "Aroma" FLOAT,
+    "Flavor" FLOAT,
+    "Aftertaste" FLOAT,
+    "Acidity" FLOAT,
+    "Body" FLOAT,
+    "Balance" FLOAT,
+    "Uniformity" FLOAT,
+    "Clean Cup" FLOAT,
+    "Sweetness" FLOAT,
+    "Overall" FLOAT,
+    "Defects" FLOAT,
+    "Total Cup Points" FLOAT,
+    "Moisture Percentage" FLOAT,
+    "Category One Defects" INTEGER,
+    "Quakers" INTEGER,
+    "Color" VARCHAR,
+    "Category Two Defects" INTEGER,
+    "Expiration" VARCHAR,
+    "Certification Body" VARCHAR,
+    "Certification Address" VARCHAR,
+    "Certification Contact" VARCHAR
+);
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+-- DML syntax: DATA LOADING PROCESS
+--------------------------------------------------------------------------------------------------------------------------------
+-- go to PSQL (right click on created table), then insert the line below:
+-- \COPY table_m3 FROM '/Users/catherinemulyadi/Desktop/raw_data.csv' WITH (FORMAT csv, HEADER true ,DELIMITER ',');
+
+--------------------------------------------------------------------------------------------------------------------------------
+-- SHOW DATA
+--------------------------------------------------------------------------------------------------------------------------------
+
+SELECT * FROM table_m3;
